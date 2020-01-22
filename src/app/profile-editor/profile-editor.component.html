@@ -38,5 +38,9 @@
     <button (click)="updateProfile()">Update Profile</button>
   </p>
 
+  <p>
+    Form Status: {{ profileForm.status }}
+  </p>
+
   <button type="submit" [disabled]="!profileForm.valid">Submit</button>
 </form>
