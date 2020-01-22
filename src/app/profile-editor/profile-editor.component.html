@@ -1,5 +1,5 @@
-<form [formGroup]="profileForm">
 
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
   <label>
     First Name:
     <input type="text" formControlName="firstName">
@@ -10,4 +10,5 @@
     <input type="text" formControlName="lastName">
   </label>
 
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
 </form>

@@ -18,4 +18,9 @@ export class ProfileEditorComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.warn(this.profileForm.value);
+  }
+
 }
